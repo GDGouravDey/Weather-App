@@ -1,2 +1,2 @@
-# Weather-App (Uncompleted)
+# Weather-App (Incomplete)
  
