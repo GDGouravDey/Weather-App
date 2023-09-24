@@ -7,17 +7,37 @@
     text-align: center;
 }
 body {
-    background: #292828;
+    background: linear-gradient(45deg, #cce767, #67c9ea 100%);
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.card.animated {
+    animation-play-state: running;
 }
 .card {
     width: 90%;
     max-width: 470px;
-    background: linear-gradient(135deg, #c6f40c, #28bff2 100%);
+    background: linear-gradient(135deg, #ccff00, #00bfff 100%);
     color: #fff;
     margin: 100px auto 0;
     border-radius: 15px;
     padding: 40px 35px;
+    margin-bottom: 70px;
     text-align: center;
+    animation: gradient 15s ease infinite;
+    background-size: 150% 150%;
 }
 .search {
     width: 100%;
